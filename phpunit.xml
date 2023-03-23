@@ -18,6 +18,9 @@
         <testsuite name="default">
             <directory>tests</directory>
         </testsuite>
+        <testsuite name="Fixtures">
+            <directory>tests/Fixtures</directory>
+        </testsuite>
     </testsuites>
 
     <filter>
