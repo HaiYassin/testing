@@ -1,6 +1,5 @@
 <?php
 
-
 /** 
  * BMI = Body Mass Index
  */
@@ -14,6 +13,10 @@ final class BMICalculator {
 
     public function calculate()
     {
+        if($this->mass <= 0 || $this->height <= 0) {
+            throw new WrongBmiDataException('error message');
+        }
+
         return round($this->mass / pow($this->height, 2), 1);
     }
 
