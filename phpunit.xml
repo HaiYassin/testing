@@ -9,7 +9,11 @@
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTodoAnnotatedTests="true"
          convertDeprecationsToExceptions="true"
-         verbose="true">
+         verbose="true"
+         colors="true"
+         testdox="false"
+         >
+
     <testsuites>
         <testsuite name="default">
             <directory>tests</directory>
